@@ -1,7 +1,7 @@
 <!-- :white_check_mark: -->
 <!-- :hammer_and_wrench: -->
 
-# Brincando/Praticando com desafios Front-End
+# Brincando/Praticando Front-End com desafios
 
 Realizando desafios do site https://frontloops.io para praticar front end.
 
