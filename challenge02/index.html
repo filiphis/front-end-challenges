@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,29 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css" />
 </head>
+
 <body>
-  
+  <section class="payment">
+    <h1 class="payment__title">Payment method</h1>
+    <ul class="payment__list">
+      <li class="payment__item">
+        <img class="payment__cardImage" src="img/visa.svg" alt="">
+        Visa
+      </li>
+      <li class=" payment__item payment__item--checked">
+        <img class="payment__cardImage" src="img/mastercard.svg" alt="">
+        Mastercard
+      </li>
+      <li class="payment__item">
+        <img class="payment__cardImage" src="img/maestro.svg" alt="">
+        Maestro
+      </li>
+    </ul>
+    <button class="payment__button">
+      Next Step
+      <img class="payment__arrow" src="./img/arrow.svg" alt="">
+    </button>
+  </section>
 </body>
+
 </html>
