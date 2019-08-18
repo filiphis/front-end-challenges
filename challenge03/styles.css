@@ -1,0 +1,108 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background: #16a085;
+}
+
+/* #5C5C5C */
+.order {
+  width: 600px;
+  height: 560px;
+  padding: 60px;
+  margin: 100px auto 0;
+  background: #ffffff url("./img/bicycle.png") no-repeat bottom;
+  background-size: 120%;
+  background-position-y: 200px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0 22px 50px rgba(14, 21, 47, 0.2),
+    0 8px 20px rgba(14, 21, 47, 0.2);
+}
+
+.order__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order__profileIcon {
+  position: relative;
+  cursor: pointer;
+  border-radius: 100%;
+  box-shadow: 0 0 0 10px white, 0 0 0 11px #dedede;
+  transition: box-shadow 0.3s;
+}
+
+.order__profileIcon:hover {
+  box-shadow: 0 0 0 10px white, 0 0 0 15px #dedede;
+}
+
+.order__profileIcon:after {
+  content: "teste";
+  position: absolute;
+  background: red;
+  width: 30px;
+  height: 30px;
+}
+
+.order__message {
+  width: 100%;
+  font-size: 14.9px;
+  margin-top: 30px;
+  color: #5c5c5c;
+}
+
+.order__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin-top: 32px; */
+}
+
+.order__item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.order__productName {
+  font-size: 16px;
+  color: #5c5c5c;
+}
+
+.order__total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+.order__total p {
+  color: #5c5c5c;
+}
+
+.order__productPrice,
+.order__total {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+}
