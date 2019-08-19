@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,37 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css" />
 </head>
+
 <body>
-  
+  <div class="chat">
+    <header class="chat__header">
+      <span class="chat__userName">Mark Zuckerberg</span>
+      <a href="#"><img src="./img/close.svg" alt=""></a>
+    </header>
+    <ul class="chat__messages">
+      <span class="chat_day">Today</span>
+      <li class="chat__message">
+        <span class="chat__time">10:53</span>
+        <p class="chat__messageText chat__messageText--myMessage">Hi, Mark! I made a new design for Messenger App.</p>
+      </li>
+      <li class="chat__message">
+        <span class="chat__time">10:57</span>
+        <p class="chat__messageText chat__messageText-fiendMessage">Yo! Send it to my assistant and we'll review it
+          during the year.</p>
+      </li>
+      <li class="chat__message">
+        <span class="chat__time">11:03</span>
+        <p class="chat__messageText chat__messageText--myMessage">But Mark...</p>
+      </li>
+      <li class="chat__message">
+        <p class="chat__messageText chat__messageText--block">You were blocked by the user.</p>
+      </li>
+    </ul>
+    <div class="chat_send">
+      <input type="text">
+      <button type="submit">Send</button>
+    </div>
+  </div>
 </body>
+
 </html>
