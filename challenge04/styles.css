@@ -25,7 +25,7 @@ body {
   margin: 100px auto 0;
   width: 400px;
   height: 484px;
-  border: 1px solid black;
+  background-color: white;
 }
 
 .chat__header {
@@ -34,12 +34,24 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  margin-bottom: 20px;
 }
 .chat__userName {
   color: #ffffff;
   letter-spacing: 1px;
   font-weight: 500;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.chat__userName::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+  background-color: white;
+  margin-right: 10px;
 }
 
 .chat__messages {
@@ -47,9 +59,50 @@ body {
   flex-direction: column;
 }
 
-.chat__time {
+.chat__day {
+  text-align: center;
+  text-transform: uppercase;
+  color: lightgrey;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
 }
+
+.chat__day::after,
+.chat__day::before {
+  content: "";
+  height: 1px;
+  width: 39%;
+  background-color: lightgrey;
+}
+
+.chat__time {
+  color: lightgrey;
+  font-size: 12px;
+}
+
+.chat__message {
+  align-self: flex-start;
+  max-width: 75%;
+  margin: 5px 10px 10px;
+}
+
+.chat__message--myMessage,
+.chat__messageText--block {
+  align-self: flex-end;
+  /* text-align: justify; */
+}
+
+.chat__messageText--block {
+  background-color: rgba(255, 99, 71, 0.9);
+}
+
 .chat__messageText {
+  font-size: 16px;
+  background-color: rgba(106, 150, 216, 0.2);
+  padding: 10px;
 }
 
 .chat__messageText--myMessage {
