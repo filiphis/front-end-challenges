@@ -24,7 +24,7 @@ body {
 .chat {
   margin: 100px auto 0;
   width: 400px;
-  height: 484px;
+  /* height: 484px; */
   background-color: white;
 }
 
@@ -62,12 +62,14 @@ body {
 .chat__day {
   text-align: center;
   text-transform: uppercase;
-  color: lightgrey;
+  /* color: lightgrey; */
+  color: rgb(148, 147, 147);
   font-size: 12px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   margin-bottom: 1rem;
+  /* font-weight: bold; */
 }
 
 .chat__day::after,
@@ -79,24 +81,27 @@ body {
 }
 
 .chat__time {
-  color: lightgrey;
+  color: rgb(148, 147, 147);
+  display: inline-block;
   font-size: 12px;
+  margin-bottom: 5px;
 }
 
-.chat__message {
-  align-self: flex-start;
-  max-width: 75%;
-  margin: 5px 10px 10px;
-}
-
-.chat__message--myMessage,
+.chat__message,
 .chat__messageText--block {
   align-self: flex-end;
+  max-width: 75%;
+  margin: 5px 16px 10px;
+}
+
+.chat__message--myMessage {
+  align-self: flex-start;
   /* text-align: justify; */
 }
 
 .chat__messageText--block {
   background-color: rgba(255, 99, 71, 0.9);
+  margin-bottom: 15px;
 }
 
 .chat__messageText {
@@ -109,4 +114,47 @@ body {
 }
 
 .chat__messageText-fiendMessage {
+}
+
+.chat__send {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: red; */
+  height: 60px;
+  /* margin: 0 10px; */
+  padding: 15px 0px;
+  border-top: 1px solid lightgrey;
+  margin: 0 15px;
+  align-items: center;
+}
+
+.chat__send input {
+  flex-grow: 1;
+  border: none;
+  color: rgb(184, 179, 179);
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 5px;
+}
+.chat__send button {
+  background-color: transparent;
+  border: none;
+  color: rgba(106, 150, 216, 0.8);
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px;
+}
+
+.chat__send button:focus,
+.chat__send button:active,
+.chat__send input:focus,
+.chat__send input:active {
+  border: none;
+  outline: none;
+}
+
+.chat__send button:hover {
+  cursor: pointer;
 }
